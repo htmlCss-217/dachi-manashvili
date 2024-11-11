@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+body{
+    background-color: #202020;
+}
+.site-header{
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 96px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    gap: 85px;
+}
+.menu-item{
+    display: flex;
+    text-decoration: none;
+    color: #DEDEDE;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.header-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    padding: 100px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
+.text-container{
+    width: 31vw;
+    gap: 24px;
+}
+.header{
+    font-size: 3.3333vw;
+}
+.description{
+    font-size: 1.25vw;
+    color: rgba(149, 149, 149, 1);
+}
+.button{
+    display: flex;
+    padding: 1vw 5vw;
+    background-color: rgba(157, 157, 157, 1);
+    width: 10vw;
+    border-radius: 4px;
+    gap: 16px;
+    font-size: 0.9vw;
+    align-items: center;
+
+}
+.man{
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 100px;
+    width: 28vw;
+}
+.featured-work{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+.arrow-container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.arrow-text{
+    color: rgba(222, 222, 222, 1);
+    font-weight: 700;
+    font-size: 16px;
+}
+.img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+
+}
+.images-col{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.content{
+    width: 100%;
+}
+.second-col{
+    margin-top: 138px;
+}
+.visual-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    padding: 20px 96px;
+    gap: 3.3vw;
+}
+.visual-title{
+    font-size: 1.8vw;
+}
+.visual-images{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 24px;
+}
+.visual{
+    width: 28.8vw;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    margin-top: 5vw;
+    gap: 46px;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.contact-title{
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+.contact-description{
+    font-size: 1.25vw;
+    width: 27vw;
+    text-align: center;
+    color: rgba(149, 149, 149, 1);
+}
+footer{
+    display: flex;
+    border-top: rgba(105, 105, 105, 1) solid 1px;
+    justify-content: space-between;
+    padding: 49px 96px;
+}
+.Copyright{
+    color: rgba(149, 149, 149, 1)
+}
+.icons{
+    display: flex;
+    gap: 2.24vw;
+}
+.icon{
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (max-width: 992px) {
+    .site-header {
+        padding: 2vw 5vw;
+    }
+    .header-conteiner{
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin-top: 10vw;
+    }
+    .text-container{
+        width: 90vw;
+        text-align: center;
+    }
+    .description{
+        font-size: 2vw;
+    }
+    .button{
+        margin: auto;
+        width: auto;
+    }
+    .man{
+        margin: auto;
+        width: 40vh;
+    }
+    .mail{
+        font-size: 2vw;
+    }
+    .visual-title{
+        font-size: 3.5vw;
+    }
+
+    .contact-title{
+        font-size: 3.5vw;
+    }
+    .contact-description{
+        font-size: 2.5vw;
+        width: auto;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .header-conteiner{
+        padding: 0;
+        padding-top: 10vw;
+    }
+    .site-header {
+        padding: 2vw 10vw 2vw 5vw;
+    }
+    .man{
+        width: 70vw;
+    }
+    .menu{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .featured-work{
+        gap: 20px;
+        padding: 5vw;
+        justify-content: center;
+    }
+    .images-col {
+        width: 90vw;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .second-col{
+        margin: 0;
+    }
+    .visual-images{
+        display: grid;
+        grid-template-columns: auto; 
+        gap: 24px;
+    }
+    .visual{
+        width: 90vw;
+    }
+    footer{
+        flex-direction: column-reverse;
+        padding: 5vw;
+        align-items: center;
+        gap: 5vw;
+    }
+    .Copyright{
+        text-align: center;
+        font-size: 5vw;
+    }
+}
