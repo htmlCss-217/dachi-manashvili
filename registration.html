@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechStore - ინტერნეტ მაღაზია, სადაც შეგიძლიათ შეიძინოთ ყველაზე პოპულარული ტექნოლოგიები. რეგისტრაცია და ავტორიზაცია სწრაფად და მარტივად.">
+    <title>რეგისტრაცია - TechStore</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <section id="home">
+            <div class="main-container">
+                <div class="header-container">
+                    <a href="index.html"><img class="logo" src="./images/logo.png" alt="TechStore"></a>
+                    <div class="burger-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li><a href="index.html">მთავარი</a></li>
+                            <li><a href="index.html#about">ჩვენს შესახებ</a></li>
+                            <li class="dropdown">
+                                <a href="index.html#products">პროდუქტები</a>
+                                <ul class="submenu">
+                                    <li><a href="index.html#products">ლეპტოპები</a></li>
+                                    <li><a href="index.html#products">პრინტერები</a></li>
+                                    <li><a href="index.html#products">აქსესუარები</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="services.html">სერვისები</a></li>
+                            <li><a href="blog.html">ბლოგი</a></li>
+                            <li><a href="/index.html#contact">კონტაქტი</a></li>
+                        </ul>
+                        <a href="/auth.html"><button class="auth-button">ავტორიზაცია</button></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="registration-section">
+            <div class="registration-container">
+                <h2>რეგისტრაცია</h2>
+                <form id="registrationForm" action="#" method="POST">
+                    <label for="reg-username">მომხმარებლის სახელი</label>
+                    <input type="text" id="reg-username" name="username" placeholder="მომხმარებლის სახელი" required>
+                    <span id="reg-usernameError" class="error"></span>
+                
+                    <label for="reg-email">ელ.ფოსტა</label>
+                    <input type="email" id="reg-email" name="email" placeholder="ელ.ფოსტა" required>
+                    <span id="reg-emailError" class="error"></span>
+                
+                    <label for="reg-password">პაროლი</label>
+                    <input type="password" id="reg-password" name="password" placeholder="პაროლი" required>
+                    <span id="reg-passwordError" class="error"></span>
+                
+                    <label for="confirm-password">გაიმეორე პაროლი</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="დამოწმება პაროლი" required>
+                    <span id="confirmPasswordError" class="error"></span>
+                
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="terms-checkbox" name="terms">
+                            ვეთანხმები <a href="#">წესებს და პირობებს</a>
+                            <span id="termsError" class="error"></span>
+
+                        </label>
+                    </div>
+                    <button type="submit">რეგისტრაცია</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 TechStore. ყველა უფლება დაცულია.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
